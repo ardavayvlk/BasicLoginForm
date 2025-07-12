@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giriş Formu</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        background-color: rebeccapurple;
+      }
+
+      .form-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .login-form {
+        width: 600px;
+        height: 300px;
+        background-color: white;
+        padding-top: 20px;
+        border-radius: 5px;
+        box-shadow: 5, 5, 5, rgba(1, 1, 1, 1);
+      }
+      .login-form input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        border: 3px solid black;
+      }
+      .login-form button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: black;
+        color: wheat;
+        transition: 0.3s;
+      }
+      .login-form button:hover {
+        background-color: wheat;
+        color: black;
+      }
+
+      .alt-mesaj {
+        font-size: 14px;
+        margin-top: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <form action="" class="login-form">
+        <input type="text" placeholder="Kullanıcı Adı" />
+        <input type="password" placeholder="şifre" />
+        <p></p>
+        <button type="submit">Giriş yap</button>
+        <p class="alt-mesaj">Hesabınız yok mu? <a href="#">Kayıt Ol</a></p>
+      </form>
+    </div>
+  </body>
+</html>
